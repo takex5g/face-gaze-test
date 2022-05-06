@@ -1,10 +1,7 @@
 <template>
-  <div
-    class="bg"
-    @mousemove="touchmove($event)"
-    @mouseup="touchend($event)"
-    @mouseleave="touchend($event)"
-  >
+  <!-- @mouseup="touchend($event)"
+    @mouseleave="touchend($event)" -->
+  <div class="bg" @mousemove="touchmove($event)">
     <div class="face-div">
       <img ref="kao" class="face" src="/face.png" width="1292" height="476" />
       <img
@@ -38,7 +35,7 @@ export default Vue.extend({
       const x = e.x - window.innerWidth / 2
       const y = e.y - window.innerHeight / 2
 
-      console.log(e.x, e.y, '動かす:', x, y)
+      // console.log(e.x, e.y, '動かす:', x, y)
       if (x < 25) {
         if (x < -25) this.X = -25
         else this.X = x

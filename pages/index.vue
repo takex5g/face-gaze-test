@@ -31,7 +31,7 @@ export default Vue.extend({
     }
   },
   methods: {
-    touchmove(e) {
+    touchmove(e: MouseEvent) {
       const x = e.x - window.innerWidth / 2
       const y = e.y - window.innerHeight / 2
 
@@ -45,22 +45,6 @@ export default Vue.extend({
         if (y < -39) this.Y = -39
         else this.Y = y
       } else this.Y = 39
-    },
-
-    touchend(e) {
-      // this.Y = e.clientY
-      // this.X = e.screenX
-      // this.Y = e.screenY
-      // console.log('offsetX:', e.offsetX)
-      // console.log('touchend:', e)
-    },
-    touchend(e) {
-      // this.X = e.offsetX
-      // this.Y = e.offsetX
-      // this.X = e.screenX
-      // this.Y = e.screenY
-      // console.log('offsetX:', e.offsetX)
-      // console.log('touchend:', e)
     },
   },
 })

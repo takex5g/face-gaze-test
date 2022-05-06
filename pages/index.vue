@@ -3,11 +3,17 @@
     @mouseleave="touchend($event)" -->
   <div class="bg" @mousemove="touchmove($event)">
     <div class="face-div">
-      <img ref="kao" class="face" src="/face.png" width="1292" height="476" />
+      <img
+        ref="kao"
+        class="face"
+        :src="$router.options.base + '/face.png'"
+        width="1292"
+        height="476"
+      />
       <img
         ref="me"
         class="face"
-        src="/me.png"
+        :src="$router.options.base + '/me.png'"
         width="1292"
         height="476"
         :style="{

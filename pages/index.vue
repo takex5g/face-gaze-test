@@ -38,10 +38,13 @@ export default Vue.extend({
   },
   methods: {
     touchmove(e: MouseEvent) {
-      const x = e.x - window.innerWidth / 2
-      const y = e.y - window.innerHeight / 2
+      const x = (e.x - window.innerWidth / 2) * 0.3
+      const y = (e.y - window.innerHeight / 2) * 0.3
 
       // console.log(e.x, e.y, '動かす:', x, y)
+      // this.X = x * 0.3
+      // this.Y = y * 0.3
+      // return
       if (x < 25) {
         if (x < -25) this.X = -25
         else this.X = x

@@ -1,7 +1,7 @@
 # face-gaze-test
 
 視線表示をさせたかったので簡単なモック
-https://takex5g.github.io/face-sight-test/
+https://takex5g.github.io/face-gaze-test/
 
 ## Build Setup
 

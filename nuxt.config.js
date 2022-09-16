@@ -29,7 +29,7 @@ export default {
     dir: 'docs',
   },
   router: {
-    base: '/face-sight-test/',
+    base: '/face-gaze-test/',
   },
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
